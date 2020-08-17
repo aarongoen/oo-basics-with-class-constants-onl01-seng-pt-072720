@@ -1,10 +1,11 @@
 class Shoe
-  attr_accessor :brand
+  attr_reader :brand 
 
   BRANDS = []
   
   def initialize(brand)
     @brand = brand
+    Shoe::BRANDS.include! brand 
   end
  
   def brand=(brand)
