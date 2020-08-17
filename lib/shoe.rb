@@ -7,7 +7,6 @@ class Shoe
     @brand = brand
     Shoe::BRANDS.include? brand 
   end
-end 
  
   def brand=(brand)
     @brand = brand
